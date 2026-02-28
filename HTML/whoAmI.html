@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Styles.css">
+    <link rel="stylesheet" href="../CSS/whoAmI.css">
+    <title>António Quimuanga | Who am I?</title>
+</head>
+<body>
+    <!-- Cabeçalho do site com o logo, menu, e botão do menu mobile -->
+    <header>
+        <!-- Logo do site -->
+        <div class="logo">
+            <a href="../index.html">ASQ</a>
+        </div>
+        <!-- Menu localizado no cabeçalho do site -->
+        <nav class="menu">
+            <ul class="links">
+                <li class="link"><a href="../index.html">Home</a></li>
+                <li class="link"><a href="whoAmI.html">Who'm I</a></li>
+                <li class="link"><a href="../HTML/services.html">My services</a></li>
+                <li class="link"><a href="../HTML/contacte_me.html">Contact me</a></li>
+            </ul>
+        </nav>
+        <!-- Botão para abrir o menu mobile -->
+        <div id="open">
+            <svg id="open-menu" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" focusable="false" aria-hidden="true" style="display: inherit;">
+                <path d="M20 5H4a1 1 0 000 2h16a1 1 0 100-2Zm0 6H4a1 1 0 000 2h16a1 1 0 000-2Zm0 6H4a1 1 0 000 2h16a1 1 0 000-2Z">
+                </path>
+            </svg>
+        </div>
+    </header>
+    <!-- Menu Mobile -->
+    <nav class="menu-mobile" id="menu-mobile">
+            <ul class="mobile-links">
+                <li class="link_mobile"><a href="../index.html">Home</a></li>
+                <li class="link_mobile"><a href="whoAmI.html">Who'm I</a></li>
+                <li class="link_mobile"><a href="../HTML/services.html">My services</a></li>
+                <li class="link_mobile"><a href="../HTML/contacte_me.html">Contact me</a></li>
+            </ul>
+    </nav>
+    <!-- Camada que cobre o site quando o menu mobile é aberto -->
+    <div class="overlay_menu" id="overlay_menu"></div>
+    <!-- Animação de transição -->
+    <div class="transition">
+        <div class="transition-row row1">
+            <div class="block_item"></div>
+            <div class="block_item"></div>
+            <div class="block_item"></div>
+            <div class="block_item"></div>
+            <div class="block_item"></div>
+        </div>
+        <div class="transition-row row2">
+            <div class="block_item"></div>
+            <div class="block_item"></div>
+            <div class="block_item"></div>
+            <div class="block_item"></div>
+            <div class="block_item"></div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <section class="sticky">
+                <div class="header">
+                    <h1>ASQ</h1>
+                </div>
+                <div class="tracker">
+                    <div class="emoji">
+                        <div class="emoji-face">
+                            <div class="eyes">
+                                <img src="../Images/eye.png" alt="">
+                                <img src="../Images/eye.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mouth-wrapper">
+                            <div class="mouth"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <div class="section-header">
+                    <h1>Sobre mim</h1>
+                    <p>
+                        Técnico médio de informática, formado pelo <a href="">
+                            Instituto Politécnico Privado Industrial Evolução
+                        </a>
+                        Trabalhei em projectos a solo, como um verdadeiro desenvolvedor
+                        fullstack, como sites escolares, e-comerces, sistemas de gestão
+                        com autenticação <abbr title="Json Web Token">JWT</abbr> e demais
+                        projectos, pessoais e institucionais, alguns deles listados abaixo
+                        após a minha formação académica
+                    </p>
+                </div>
+                <div class="section-images">
+                    <div class="row">
+                        <div class="first">
+                            <h1>Ensino Médio Técnico</h1>
+                            <img src="" alt="">
+                        </div>
+                        <div class="second">
+                            <h1>Imersão Alura</h1>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="first">
+                            <h1>Formações Técnico Profissionais</h1>
+                            <img src="" alt="">
+                        </div>
+                        <div class="second">
+                            <h1>Primeiro Emprego</h1>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="clients"></section>
+        </div>
+    </main>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/CustomEase.min.js"></script> -->
+    <script src="../JS/gsap.min.js"></script>
+    <script src="../JS/transition.js"></script>
+    <script src="../JS/index.js"></script>
+    <script src="../JS/whoAmI.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger, CustomEase);
+    </script>
+    <script>
+        gsap.from(".link",{
+            y: "-200px",
+            duration: 1.1,
+            opacity: 0,
+            stagger:{
+                amount: .25,
+            },
+        });
+    </script>
+</body>
+</html>

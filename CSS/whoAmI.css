@@ -1,0 +1,198 @@
+@media (prefers-color-scheme: dark) {
+    body{
+        width: 100%;
+        height: 100%;
+        scroll-behavior: smooth;
+    }
+    .logo a{
+        color: #ffffff;
+    }
+    .menu .links .link a{
+        position: relative;
+        color: var(--second-color);
+    }
+    .menu .links .link a::before{
+        content: '';
+        background: var(--second-color);
+        opacity: 0;
+        transition: all.55s ease;
+    }
+    .links{
+        position: relative;
+    }
+    #open-menu{
+        fill: var(--second-color);
+    }
+    img{
+        user-select: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    section.sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100dvh;
+        background: var(--third-color);
+    }
+    .header{
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .header h1{
+        text-transform: uppercase;
+        font-family: 'Cloister Black';
+        font-size: 45vw;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: 100%;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    section.content{
+        background: var(--first-color);
+        position: absolute;
+        top: 100vh;
+        width: 100%;
+        height: max-content;
+        padding: 6em 2em;
+    }
+    .tracker{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        height: 75%;
+    }
+    .emoji{
+        user-select: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 320px;
+        height: 320px;
+        background: #0000ff;
+        border-radius: 100%;
+        box-shadow: inset -10px -10px 35px #000000;
+    }
+    /* Criação do efeito de luz (cuz i hadn't pacient to look and download a shape 
+    circular with light and shadow included 🥱) */
+    .emoji::before{
+        border-radius: 100%;
+        opacity: .9;
+        box-shadow: inset 10px 10px 20px #ffffff;
+        height: 320px;
+        width: 320px;
+        content: '';
+        position: absolute;
+        /* background: #00000090; */
+    }
+    .emoji-face{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 225px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    .eyes, .mouth-wrapper{
+        flex: 1;
+    }
+    .eyes{
+        justify-content: space-evenly;
+        display: flex;
+    }
+    
+    .eyes img{
+        width: 100px;
+        height: 100px;
+        animation: rotateEyes 4s infinite linear;
+    }
+    @keyframes rotateEyes {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .mouth-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .mouth{
+        position: absolute;
+        bottom: 80px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        background: var(--first-color);
+        box-shadow: inset 20px 20px 5px #ff0000;
+        animation: Face infinite .8s alternate linear;
+    }
+    @keyframes Face {
+        0%{
+            height: 40px;
+        }
+        100%{
+            height: 70px;
+        }
+    }
+    .section-header{
+        width: 95%;
+        margin-left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    }
+    .section-header h1{
+        font-family: 'Antonio';
+        font-size: 10vw;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+    .section-header p{
+        font-family: 'Poppins';
+        color: #ffffff;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-align: right;
+        width: 35%;
+    }
+    .row{
+        display: flex;
+        height: 600px;
+        font-family: 'Antonio';
+        color: var(--second-color);
+        gap: 2em;
+        margin: 2em 0;
+    }
+    .row img{
+        height: 600px;
+    }
+    .first, .second{
+        margin-top: 10px;
+        align-items: center;
+        flex: 1;
+        flex-direction: column;
+        display: flex;
+    }
+}
