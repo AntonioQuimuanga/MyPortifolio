@@ -6,7 +6,9 @@
     --fifth-color: #034159;
     --sixth-color: #3d5a73;
     --seventh-color: #0015ff;
-
+    --font-family-one: 'Cloister Black', serif;
+    --font-family-two: 'Antonio', sans-serif;
+    --font-family-three: 'Poppins', sans-serif;
 }
 *{
     margin: 0;
