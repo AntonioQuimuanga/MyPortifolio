@@ -9,6 +9,7 @@
     transform: translateX(-50%);
 }
 .service_card{
+    user-select: none;
     position: relative;
     justify-content: center;
     place-content: center;
@@ -16,7 +17,6 @@
     color: var(--second-color);
     padding: 10px 20px;
     border-radius: 15px;
-    
 }
 .service_card h2{
     font-family: var(--font-family-two);

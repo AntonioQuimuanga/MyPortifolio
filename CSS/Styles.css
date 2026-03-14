@@ -32,6 +32,7 @@ a{
         width: 100%;
         background: var(--second-color);
         color: var(--first-color);
+        transition: all.55s ease;
     }
     /* Transição entre páginas do site */
     .transition{
@@ -82,7 +83,7 @@ a{
         position: absolute;
         text-decoration: none;
         text-transform: uppercase;
-        font-family: 'Cloister Black';
+        font-family: var(--font-family-one);
         font-size: 60px;
         color: #000000;
     }
@@ -100,7 +101,7 @@ a{
         justify-content: space-around;
         align-items: center;
         font-weight: 900;
-        font-family: 'Antonio';
+        font-family: var(--font-family-two);
     }
     .menu .links .link a{
         position: relative;
@@ -130,6 +131,7 @@ a{
         cursor: pointer;
     }
     .menu-mobile{
+        top: 0;
         z-index: 10;
         position: fixed;
         overflow: hidden;
@@ -144,7 +146,7 @@ a{
         display: flex;
         flex-direction: column;
         white-space: nowrap;
-        font-family: 'Antonio';
+        font-family: var(--font-family-two);
         font-weight: 900;
     }
     .link_mobile{
@@ -188,7 +190,7 @@ a{
         height: 200px;
         background: var(--first-color);
         color: var(--second-color);
-        font-family: 'Cloister Black';
+        font-family: var(--font-family-one);
         position: absolute;
         left: 0;
         bottom: 0;
@@ -237,7 +239,7 @@ a{
         height: 100dvh;
         place-content: center;
         font-size: 70px;
-        font-family: 'Cloister Black';
+        font-family: var(--font-family-one);
         display: flex;
         flex-direction: column;
     }
