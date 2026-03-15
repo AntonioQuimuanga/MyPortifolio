@@ -17,6 +17,7 @@
     color: var(--second-color);
     padding: 10px 20px;
     border-radius: 15px;
+    transition: all.55s ease;
 }
 .service_card h2{
     font-family: var(--font-family-two);
